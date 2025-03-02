@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 from chatbot import generate_response  # Import AI logic
 import re
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -31,4 +32,5 @@ def chat():
     return jsonify({"response": cleaned_response})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))  # Get the port from Render
+    app.run(host="0.0.0.0", port=port, debug=True)  # Set the correct host & port
