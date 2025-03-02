@@ -18,7 +18,7 @@ function sendMessage() {
     document.getElementById("userInput").value = "";  // Clear input field
 
     // Send message to Flask backend
-    fetch("/chat", {
+    fetch("https://aichatbot-tbc1.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userMessage })
