@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, send_from_directory
 from flask_cors import CORS
 from chatbot import generate_response  # Import AI logic
 import re
@@ -9,7 +9,7 @@ CORS(app)
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return send_from_directory("..frontend/templates","index.html")
 
 def clean_markdown(text):
     """Converts AI Markdown to HTML-friendly formatting."""

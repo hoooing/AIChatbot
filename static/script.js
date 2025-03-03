@@ -25,7 +25,7 @@ function sendMessage() {
     })
     .then(response => response.json())
     .then(data => {
-        let formattedResponse = formatMarkdown(data.response); // ✅ Convert Markdown to HTML
+        let formattedResponse = formatMarkdown(data.response); // Convert Markdown to HTML
         chatbox.innerHTML += `<div class="chat-message bot-message"><b>AI BOT:</b> ${formattedResponse}</div>`;
         chatbox.scrollTop = chatbox.scrollHeight; // Auto-scroll
     })
