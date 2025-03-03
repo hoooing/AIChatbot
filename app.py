@@ -1,15 +1,15 @@
-from flask import Flask, request, jsonify, render_template, send_from_directory
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 from chatbot import generate_response  # Import AI logic
 import re
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="frontend/static", template_folder="frontend/templates")
 CORS(app)
 
 @app.route("/")
 def home():
-    return send_from_directory("..frontend/templates","index.html")
+    return render_template("index.html")
 
 def clean_markdown(text):
     """Converts AI Markdown to HTML-friendly formatting."""
