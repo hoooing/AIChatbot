@@ -4,7 +4,7 @@ from chatbot import generate_response  # Import AI logic
 import re
 import os
 
-app = Flask(__name__, template_folder="frontend/templates", static_folder="frontend/static")
+app = Flask(__name__)
 CORS(app)
 
 @app.route("/")
