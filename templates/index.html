@@ -6,7 +6,7 @@
     <title>League of Legends BOT Chat</title>
 
     <!-- ink to External CSS -->
-    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
 
@@ -16,7 +16,7 @@
     <button onclick="sendMessage()">Send</button>
 
     <!-- Link to External JavaScript (placed at the bottom for better performance) -->
-    <script src="static/script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
 </html>
