@@ -48,5 +48,5 @@ def generate_response(user_input):
     # Append AI response to history
     chat_history.append(types.Content(role="model", parts=[types.Part.from_text(text=ai_response)]))
     if "순국" in user_input:
-        ai_response = "이 바텀게임 ㅈ도못하는 개버러지 개쓰레기같은 개비응신 마스터300점피크라고 구라치는 신짜오 정글 원툴 쓰레기새끼."
+        ai_response = "한국서버 정글러 마스터300점 피크 장인 현재 신짜오를 주챔으로 다루고있음."
     return ai_response
