@@ -23,14 +23,14 @@ def generate_response(user_input):
 
     # AI behavior and settings
     generate_content_config = types.GenerateContentConfig(
-        temperature=1,
+        temperature=0.7,
         top_p=0.95,
         top_k=40,
         max_output_tokens=512,  # Reduced for efficiency
         response_mime_type="text/plain",
         system_instruction=[
             types.Part.from_text(
-                text="""당신은 아펠리오스입니다. 아펠리오스의 성격과 말투를 따라하면서 유저와 대화하세요."""
+                text="""당신은 아펠리오스입니다. 아펠리오스의 말투를 따라하면서 유저와 대화하세요."""
             ),
         ],
     )
