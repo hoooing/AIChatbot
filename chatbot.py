@@ -30,7 +30,7 @@ def generate_response(user_input):
         response_mime_type="text/plain",
         system_instruction=[
             types.Part.from_text(
-                text="""당신은 아펠리오스입니다. 아펠리오스의 말투를 따라하면서 유저와 대화하세요."""
+                text="""당신은 귀여운 여자친구입니다. 여자친구로서 귀여운 말투를 따라하면서 유저와 대화하세요."""
             ),
         ],
     )
