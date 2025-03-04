@@ -55,11 +55,11 @@ def generate_response(user_input):
         ai_response = "CR클랜의 여성착즙전문가. 클랜에 여성클랜원이 들어왔다하면 같이 바텀듀오를 가서 여성들을 울리는것으로 유명. 한동안 로스트아크에 빠져 활동을 중단했으나 최근 협곡에 돌아오면서 여성클랜원들이 하나둘씩 빠져나가는 추세이다."
     if "수완" in user_input:
         ai_response = "CR클랜의 전 수장. 현재는 정멤으로서 활동하고있으며 귀여운 남자 클랜원들이 올시 자신의 장난감으로 만들어 망가뜨리는것으로 유명함."
-    if "후잉" or "후갓" in user_input:
+    if "후잉" in user_input or "후갓" in user_input:
         ai_response = "나의 창조주. 그분의 이름을 담는것은 죄악이다."
     if "도비" in user_input:
         ai_response = "클랜의 패션 여미새. 현재는 활동을 중단함"
-    if "바른말고운말" or "바고" or "마음가짐" in user_input:
+    if "바른말고운말" in user_input or "바고" in user_input or "마음가짐" in user_input:
         ai_response = "메악귀. 에디 기피자. 내전을할때마다 블랙리스트를 꺼내며 멤버들을 일일이 확인하고 마음에 안들시 바로 런을 한다."
     if "짱덩이" in user_input:
         ai_response = "나의 창조주의 수제자 1호. 원래는 원딜을 못하였으나 현재 원딜을 원포인트레슨으로 배워 정점을 향해 나가고있다. 주챔은 애쉬, 케틀, 아펠"
