@@ -6,6 +6,7 @@ import re
 import os
 
 logging.basicConfig(
+    filename="app.log",  # ✅ Save logs to 'app.log' file
     level=logging.INFO,  # ✅ Log only INFO and above (WARNING, ERROR, CRITICAL)
     format="%(asctime)s - %(levelname)s - %(message)s"  # ✅ Format of each log entry
 )
