@@ -6,7 +6,6 @@ import re
 import os
 
 logging.basicConfig(
-    filename="app.log",  # ✅ Save logs to 'app.log' file
     level=logging.INFO,  # ✅ Log only INFO and above (WARNING, ERROR, CRITICAL)
     format="%(asctime)s - %(levelname)s - %(message)s"  # ✅ Format of each log entry
 )
@@ -17,7 +16,6 @@ CORS(app)
 @app.route("/")
 def home():
     app.logger.info("Home page accessed")  # ✅ Log when home page is visited    
-    return render_template("index.html")
 
 def clean_markdown(text):
     """Converts AI Markdown to HTML-friendly formatting."""
